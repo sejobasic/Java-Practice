@@ -1,24 +1,49 @@
+import javax.sound.midi.SysexMessage;
+
 public class Functions {
   public static void main(String[] args) {
-    singChorus();
-    calculateArea(2.5, 5.5);
-    calculateTip(100.00);
-  }
+    double area = calculateArea(2.5, 5.5);
+    printArea(2.5, 5.5, area);
 
-  public static void singChorus() {
-    System.out.println("Don't blame it on the sunshine");
-    System.out.println("Don't blame it on the moonlight");
-    System.out.println("Don't blame it on good times");
-    System.out.println("blame it on the boogie");
-  } 
-
-  public static void calculateArea(double length, double width) {
-    double area = length * width;
-    System.out.println("Area: " + area);
-  }
-
-  public static void calculateTip(double bill) {
-    double tip = bill * 0.25;
+    double tip = calculateTip(100.00);
     System.out.println("Your service was great! Here is a tip: " + tip);
+
+    String english = explainArea("English");
+    System.out.println(english);
+
+  }
+
+  public static double calculateArea(double length, double width) {
+    if (length < 0 || width < 0) {
+      System.out.println("INVALID DIMENSIONS");
+      System.exit(0);
+    }
+    double area = length * width;
+    return area;
+  }
+
+  public static double calculateTip(double bill) {
+    double tip = bill * 0.25;
+    return tip;
+  }
+
+  public static String explainArea(String language) {
+    switch (language) {
+      case "English":
+        return "Area equals length * width";
+      case "French":
+        return "La surface est egale a la longueur * la largeur";
+      case "Spanish":
+        return "area es ligula a largo * ancho";
+      default:
+        return "Language does not exist";
+    }
+  }
+
+  public static void printArea(
+  double length, 
+  double width, 
+  double area) {
+    System.out.println();
   }
 }
