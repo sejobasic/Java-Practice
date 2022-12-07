@@ -10,14 +10,22 @@ public class Convert {
 
   }
 
+  /**
+   * Function: Converts fahrenheit to celsius with formula
+   * @param f
+   * @return celsius double
+   */
   public static double fahrenheitToCelsius(double f) {
     return (f - 32) * 5/9;
   }
 
+  /**
+   * Function: Prints fahrenheit and celsius values - Calls f to c to get celsius
+   * @param f
+   */
   public static void printTemp(double f) {
     double celsius = fahrenheitToCelsius(f);
     System.out.println("F: " + f);
     System.out.println("C: " + celsius);
   }
-
 }
