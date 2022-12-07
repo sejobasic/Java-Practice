@@ -17,5 +17,7 @@ public class Dealership {
       break;
       default: System.out.println("invalid option");
     }
+
+    scan.close();
   }
 }
