@@ -46,6 +46,14 @@ public class Arrays {
 
     System.out.println("\nThe highest score is: " + highScore);
 
+
+    String[] apples = {"Gala", "Granny Smith", "Macintosh"};
+    double[] price = {1.99, 1.49, 1.29};
+
+    for (int i = 0; i < apples.length; i++) {
+      System.out.println(apples[i] + ": $" + price[i]);
+    }
+
   }
 
   public static int getRandomNum() {
