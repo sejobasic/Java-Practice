@@ -26,8 +26,5 @@ public class PizzaDelivery {
         System.out.println("Great, a driver is on the way!");
 
         scan.close();
-
-
-         
     }
 }
