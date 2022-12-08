@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// The user has to keep guessing a number until they get it right.
+
 public class Guess {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
