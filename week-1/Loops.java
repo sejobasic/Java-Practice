@@ -1,16 +1,12 @@
-import java.util.Scanner;
-
 public class Loops {
   public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
-
-    System.out.print("Hi, please choose a number to count up to: ");
-    int num = scan.nextInt();
-
-    for (int i = 0; i <= num; i++) {
-      System.out.print(i);
+    for (int i = 99; i >= 1; i--) {
+      sing(i);
     }
+  }
 
-    scan.close();
+  public static void sing(int i) {
+    System.out.println(i + "bottles of beer on the wall, "+ i +" bottles of beer! take one down, pass it around "+ (i - 1) +", bottles of beer on the wall!"
+    );
   }
 }
