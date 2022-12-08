@@ -10,6 +10,13 @@ public class Loops {
       guess = Math.random();
       System.out.println(guess);
     }
+
+    for (int i = 0; i <= 10; i++) {
+      if (i % 2 != 0) {
+        continue;
+      }
+      System.out.println(i);
+    }
   }
 
   public static void sing(int i) {
