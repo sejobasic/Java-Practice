@@ -21,6 +21,16 @@ ENCAPSULATION
   - Encapsulate things that we don't want exposed with private method
   - Encapsulate things that we want to expose with public method
 
+INHERITANCE
+  - Every class we write automatically comes with inheritance
+  - Every time we write a custom type or create a class we are inheriting by default
+    from the object class
+  - The two methods that all classes have are (toString) and (equals) which are
+    inherited from the root object class
+  - A class can only extend 1 other class
+  - A class can implement any number of interfaces
+  - An interface may extend any number of other interfaces
+   
 
 
 
