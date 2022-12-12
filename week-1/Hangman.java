@@ -91,7 +91,18 @@ public class Hangman {
         char[] missArray = new char[5];
         boolean missCheck = false; 
 
+        int phase = 1;
+
         while (true) {
+            System.out.println(getGallows(phase));
+
+            if (phase == 7) {
+                System.out.print("RIP!");
+                System.out.println("\n");
+                System.out.println("The word was: " + randomWord);
+                break;
+            }
+
             System.out.print("Word: ");
             printArray(placeholderArr);
 
@@ -110,13 +121,14 @@ public class Hangman {
 
             missCheck = checkGuess(placeholderArr, userGuess);
 
-            if (missCheck == false){                            // if missCheck = false add userGuess to missArray + phase++ for change phasesOfGallow
-                for(int i = 0; i < missArray.length; i++){      // Adding an element to the first empty missArray's index
+            if (missCheck == false) {
+                for(int i = 0; i < missArray.length; i++) {
                     if(missArray[i] == 0) {
                         missArray[i] = userGuess;
                         break;
                     }
                 }
+                phase++;
             }
         }
 
@@ -184,6 +196,78 @@ public class Hangman {
         }
 
         return returnArray;
+    }
+
+    public static String getGallows(int num) {
+        switch (num) {
+            case 1:   
+            return 
+            "+---+\n" +
+            "|   |\n" +
+            "    |\n" +
+            "    |\n" +
+            "    |\n" +
+            "    |\n" +
+            "=========\n";
+            case 2:   
+            return 
+            "+---+\n" +
+            "|   |\n" +
+            "O   |\n" +
+            "    |\n" +
+            "    |\n" +
+            "    |\n" +
+            "=========\n";
+            case 3:   
+            return 
+            "+---+\n" +
+            "|   |\n" +
+            "O   |\n" +
+            "|   |\n" +
+            "    |\n" +
+            "    |\n" +
+            "=========\n";
+            case 4:   
+            return 
+            " +---+\n" +
+            " |   |\n" +
+            " O   |\n" +
+            "/|   |\n" +
+            "     |\n" +
+            "     |\n" +
+            " =========\n";
+            case 5:   
+            return 
+            " +---+\n" +
+            " |   |\n" +
+            " O   |\n" +
+            "/|\\  |\n" + 
+            "     |\n" +
+            "     |\n" +
+            " =========\n";
+            case 6:   
+            return 
+            " +---+\n" +
+            " |   |\n" +
+            " O   |\n" +
+            "/|\\  |\n" +
+            "/    |\n" +
+            "     |\n" +
+            " =========\n";
+            case 7:   
+            return 
+            " +---+\n" +
+            " |   |\n" +
+            " O   |\n" +
+            "/|\\  |\n" + 
+            "/ \\  |\n" +
+            "     |\n" +
+            " =========\n" +
+            "          \n";
+
+            default: 
+            return "This does not exist";
+        }
     }
 
 }
