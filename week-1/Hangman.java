@@ -15,65 +15,7 @@ import java.util.Scanner;
 // If user input character is not present print guess again
 
 public class Hangman {
-
     static Scanner scan = new Scanner(System.in);
-
-    public static String[] gallows = { "+---+\n" +
-            "|   |\n" +
-            "    |\n" +
-            "    |\n" +
-            "    |\n" +
-            "    |\n" +
-            "=========\n",
-
-            "+---+\n" +
-                    "|   |\n" +
-                    "O   |\n" +
-                    "    |\n" +
-                    "    |\n" +
-                    "    |\n" +
-                    "=========\n",
-
-            "+---+\n" +
-                    "|   |\n" +
-                    "O   |\n" +
-                    "|   |\n" +
-                    "    |\n" +
-                    "    |\n" +
-                    "=========\n",
-
-            " +---+\n" +
-                    " |   |\n" +
-                    " O   |\n" +
-                    "/|   |\n" +
-                    "     |\n" +
-                    "     |\n" +
-                    " =========\n",
-
-            " +---+\n" +
-                    " |   |\n" +
-                    " O   |\n" +
-                    "/|\\  |\n" + // if you were wondering, the only way to print '\' is with a trailing escape
-                                  // character, which also happens to be '\'
-                    "     |\n" +
-                    "     |\n" +
-                    " =========\n",
-
-            " +---+\n" +
-                    " |   |\n" +
-                    " O   |\n" +
-                    "/|\\  |\n" +
-                    "/    |\n" +
-                    "     |\n" +
-                    " =========\n",
-
-            " +---+\n" +
-                    " |   |\n" +
-                    " O   |\n" +
-                    "/|\\  |\n" +
-                    "/ \\  |\n" +
-                    "     |\n" +
-                    " =========\n" };
 
     public static void main(String[] args) {
 
@@ -81,17 +23,17 @@ public class Hangman {
 
         char[] wordChar = new char[randomWord.length()];
         char[] placeholderArr = new char[randomWord.length()];
+        char[] missArray = new char[5];
+
+        boolean missCheck = false; 
+
+        int phase = 1;
 
         // Copying char by char into array
         for (int i = 0; i < wordChar.length; i++) {
             wordChar[i] = randomWord.charAt(i);
             placeholderArr[i] = '_';
         }
-
-        char[] missArray = new char[5];
-        boolean missCheck = false; 
-
-        int phase = 1;
 
         while (true) {
             System.out.println(getGallows(phase));
