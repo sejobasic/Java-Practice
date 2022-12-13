@@ -1,23 +1,29 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Person mark = new Person("mark", "bosnian", "12/09/93", new String[] {"Expires: 2030", "International"},35);
+        Scanner scan = new Scanner(System.in);
 
-        mark.setName("Mark Johnson");
-        mark.setPassport(new String[]{"Expires 2020", "Domestic"});
-        mark.chooseSeat();
+        Car[] cars = new Car[] {
+                new Car("Nissan", 5000, 2020, "Red", new String[] {"Tires", "Keys"}),
+                new Car("Dodge", 2000, 2015, "Blue", new String[] {"Radio", "Keys"}),
+                new Car("Honda", 1000, 1999, "Green", new String[] {"Sunroof", "Keys"}),
+                new Car("Mercedes", 10000, 2020, "Silver", new String[] {"Tires", "Keys"}),
+                new Car("Nissan", 7000, 2021, "Black", new String[] {"Tires", "Keys"}),
+        };
 
-        System.out.println("Name: " + mark.getName() + "\nNationality: " + mark.getNationality() + "\nDate Of Birth: " + mark.getDateOfBirth() + "\nPassport: " + Arrays.toString(mark.getPassport()));
+        Dealership dealership = new Dealership(cars);
 
-        if (mark.applyPassport()) {
-            System.out.println("Congratulations " + mark.getName() + ". Your passport was approved! Your seat number is " + mark.getSeatNumber());
-        } else {
-            System.out.println("We are sorry " + mark.getName() + ". We cannot process your application.");
-        }
+        System.out.println("\n Dealership");
+        System.out.println("Feel free to browse");
+        System.out.println(dealership);
+        System.out.println("Which car are you interested in? 0-4");
+        int index = scan.nextInt();
 
+        dealership.sell(index);
 
+        scan.close();
 
     }
 }
