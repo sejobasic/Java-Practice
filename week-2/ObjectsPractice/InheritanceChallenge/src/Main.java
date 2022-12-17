@@ -23,6 +23,5 @@ public class Main {
         System.out.println("Marry's paycheck = $" + marry.collectPay());
         System.out.println("Marry's paycheck with double pay = $" + marry.getDoublePay());
 
-
     }
 }

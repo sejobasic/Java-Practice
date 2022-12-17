@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/MentalModel/MentalModel.iml" filepath="$PROJECT_DIR$/MentalModel/MentalModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObjectsPractice.iml" filepath="$PROJECT_DIR$/ObjectsPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Person/Person.iml" filepath="$PROJECT_DIR$/Person/Person.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringFormatting/StringFormatting.iml" filepath="$PROJECT_DIR$/StringFormatting/StringFormatting.iml" />
       <module fileurl="file://$PROJECT_DIR$/VendingMachine/VendingMachine.iml" filepath="$PROJECT_DIR$/VendingMachine/VendingMachine.iml" />
       <module fileurl="file://$PROJECT_DIR$/bank/bank.iml" filepath="$PROJECT_DIR$/bank/bank.iml" />
     </modules>

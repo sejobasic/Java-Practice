@@ -8,10 +8,6 @@ public class Worker {
         this.birthDate = birthDate;
     }
 
-
-
-
-
     public int getAge() {
         int currentYear = 2022;
         int birthYear = Integer.parseInt(birthDate.substring(6));
