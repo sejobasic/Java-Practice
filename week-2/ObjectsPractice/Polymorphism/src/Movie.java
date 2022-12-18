@@ -30,6 +30,10 @@ class Adventure extends Movie {
         super.watchMovie();
         System.out.println("Beautiful scenery\n");
     }
+
+    public void watchAdventure() {
+        System.out.println("Watching an Adventure!");
+    }
 }
 
 class Comedy extends Movie {
@@ -42,6 +46,10 @@ class Comedy extends Movie {
         super.watchMovie();
         System.out.println("Hilarious\n");
     }
+
+    public void watchComedy() {
+        System.out.println("Watching a Comedy!");
+    }
 }
 
 class Action extends Movie {
@@ -53,5 +61,9 @@ class Action extends Movie {
     public void watchMovie() {
         super.watchMovie();
         System.out.println("Huge Explosions\n");
+    }
+
+    public void watchComedy() {
+        System.out.println("Watching an Action!");
     }
 }
