@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnimalInheritance/AnimalInheritance.iml" filepath="$PROJECT_DIR$/AnimalInheritance/AnimalInheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BurgerChallenge/BurgerChallenge.iml" filepath="$PROJECT_DIR$/BurgerChallenge/BurgerChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/CarPolymorphism/CarPolymorphism.iml" filepath="$PROJECT_DIR$/CarPolymorphism/CarPolymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/Composition/Composition.iml" filepath="$PROJECT_DIR$/Composition/Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/Encapsulation/Encapsulation.iml" filepath="$PROJECT_DIR$/Encapsulation/Encapsulation.iml" />

@@ -39,4 +39,13 @@ public class Order {
     public double getTotal() {
         return total;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "customer=" + customer +
+                ", lemonades=" + Arrays.toString(lemonades) +
+                ", total=" + total +
+                '}';
+    }
 }
