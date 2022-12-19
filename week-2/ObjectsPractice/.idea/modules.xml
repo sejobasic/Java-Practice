@@ -5,10 +5,16 @@
       <module fileurl="file://$PROJECT_DIR$/AnimalInheritance/AnimalInheritance.iml" filepath="$PROJECT_DIR$/AnimalInheritance/AnimalInheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/BurgerChallenge/BurgerChallenge.iml" filepath="$PROJECT_DIR$/BurgerChallenge/BurgerChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/CarPolymorphism/CarPolymorphism.iml" filepath="$PROJECT_DIR$/CarPolymorphism/CarPolymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collection/Collection.iml" filepath="$PROJECT_DIR$/Collection/Collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections Lists-Arrays/Collections Lists-Arrays.iml" filepath="$PROJECT_DIR$/Collections Lists-Arrays/Collections Lists-Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections Maps/Collections Maps.iml" filepath="$PROJECT_DIR$/Collections Maps/Collections Maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections Sets-HashSets/Collections Sets-HashSets.iml" filepath="$PROJECT_DIR$/Collections Sets-HashSets/Collections Sets-HashSets.iml" />
       <module fileurl="file://$PROJECT_DIR$/Composition/Composition.iml" filepath="$PROJECT_DIR$/Composition/Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/Encapsulation/Encapsulation.iml" filepath="$PROJECT_DIR$/Encapsulation/Encapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/Exceptions/Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/Inheritance/Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/InheritanceChallenge/InheritanceChallenge.iml" filepath="$PROJECT_DIR$/InheritanceChallenge/InheritanceChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LemonadeStand/s/Lists/Arrays.iml" filepath="$PROJECT_DIR$/../LemonadeStand/s/Lists/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/MentalModel/MentalModel.iml" filepath="$PROJECT_DIR$/MentalModel/MentalModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObjectsPractice.iml" filepath="$PROJECT_DIR$/ObjectsPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Person/Person.iml" filepath="$PROJECT_DIR$/Person/Person.iml" />

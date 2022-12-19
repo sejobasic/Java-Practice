@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Dog implements MakeNoise {
     private int walkDistancePref;
     private int age;
@@ -22,6 +24,8 @@ public class Dog implements MakeNoise {
         this.walkDistancePref = walkDistancePref;
     }
 
+
+
     public int getAge() {
         return age;
     }
@@ -34,4 +38,32 @@ public class Dog implements MakeNoise {
         System.out.println("Bark!");
     }
 
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "walkDistancePref=" + this.walkDistancePref +
+                ", age=" + this.age +
+                ", name='" + this.name + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null) {
+            return false;
+        }
+
+        if (this.getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Dog other = (Dog)obj;
+
+        return Objects.equals(this.name, other.name) &&
+                Objects.equals(this.age, other.age);
+    }
 }
