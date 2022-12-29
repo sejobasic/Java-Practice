@@ -1,30 +1,23 @@
 package org.example;
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        Cat lola = new Cat("Lola", "Silver", 5, "Clumping");
+        Dog max = new Dog("Max", "Black", 8, "2 Miles");
+        Horse bucky = new Horse("Bucky", "White", 20, 5);
 
-        Random rand = new Random();
+        System.out.println(lola);
+        lola.meow();
+        lola.eat();
 
-        int randomNum = rand.nextInt(5) + 1;
+        System.out.println(max);
+        max.bark();
+        max.eat();
 
-        boolean playerGuessCorrect = false;
+        System.out.println(bucky);
+        bucky.neigh();
+        bucky.eat();
 
-        while (!playerGuessCorrect) {
-            System.out.println("Enter your guess (1-100)");
-            int guess = scan.nextInt();
-            if (guess == randomNum) {
-                System.out.println("Correct! You Win!");
-                playerGuessCorrect = true;
-            } else if (randomNum > guess) {
-                System.out.println("Nope! the number is higher");
-            } else if (randomNum < guess) {
-                System.out.println("Nope! the number is lower");
-            }
-        }
     }
 }
