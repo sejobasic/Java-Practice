@@ -28,12 +28,12 @@ public class RandomArray {
         int[] reversedSeventh = reverseArray(seventhArr, 10);
 
 
-//        System.out.println(Arrays.toString(firstArr));
-//        System.out.println(Arrays.toString(secArr));
-//        System.out.println(Arrays.toString(thirdArr));
-//        System.out.println(Arrays.toString(fourthArr));
-//        System.out.println(Arrays.toString(fifthArr));
-//        System.out.println(Arrays.toString(sixthArr));
+        System.out.println(Arrays.toString(firstArr));
+        System.out.println(Arrays.toString(secArr));
+        System.out.println(Arrays.toString(thirdArr));
+        System.out.println(Arrays.toString(fourthArr));
+        System.out.println(Arrays.toString(fifthArr));
+        System.out.println(Arrays.toString(sixthArr));
         System.out.println(Arrays.toString(seventhArr));
         System.out.println(Arrays.toString(reversedSeventh));
 
